@@ -5,7 +5,7 @@ const tipAmount = document.getElementById("tipAmount");
 const totalBill = document.getElementById("totalBill");
 const errorMessage = document.getElementById("error-message");
 const split = document.getElementById("split");
-const amountPerPerson = document.getElementById("amountPerPerson");
+const amountPerPerson = document.getElementById("amountPerPerson"); 
 const resetButton = document.getElementById("resetButton");
 
 billTotal.addEventListener("input", calculateTip);

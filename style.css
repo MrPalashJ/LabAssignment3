@@ -3,7 +3,7 @@ body {
     text-align: center;
     background-color: #a5e0d9;
 }
-.a{
+.container{
     background-color: rgb(248, 250, 106);
     align-content: center;
     border: 1px solid #ccc;
@@ -27,8 +27,20 @@ input[type="text"], input[type="range"] {
     border-radius: 5px;
 }
 
+#resetButton{
+    background-color: rgb(0, 255, 213);
+    border: none;
+    border-radius: 3px;
+    color: rgb(10, 10, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .error-message {
-    color: red;
+    color: rgb(255, 0, 0);
 }
 /* For phones */
 @media (max-width: 500px) {
@@ -40,7 +52,7 @@ input[type="text"], input[type="range"] {
 
 /* For tablets */
 @media (min-width: 501px) and (max-width: 800px) {
-    .a {
+    .container{
         width: 70%; /* Adjust the width as needed */
         margin: 5% auto;
     }
@@ -48,7 +60,7 @@ input[type="text"], input[type="range"] {
 
 /* For mid size laptops */
 @media (min-width: 801px) and (max-width: 1200px) {
-    .a {
+    .container{
         width: 60%; /* Adjust the width as needed */
         margin: 5% auto;
     }
@@ -56,7 +68,7 @@ input[type="text"], input[type="range"] {
 
 /* For laptops */
 @media (min-width: 1201px) and (max-width: 1600px) {
-    .a {
+    .container{
         width: 50%; /* Adjust the width as needed */
         margin: 5% auto;
     }
@@ -64,7 +76,7 @@ input[type="text"], input[type="range"] {
 
 /* For desktop */
 @media (min-width: 1601px) {
-    .a {
+    .container{
         width: 40%; /* Adjust the width as needed */
         margin: 5% auto;
     }
