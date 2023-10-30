@@ -1,55 +1,99 @@
+<!-- /**********************************************************************
+* _______            __                      __                 _____            __           
+*|       \          |  \                    |  \               |     \          |  \          
+*| $$$$$$$\ ______  | $$  ______    _______ | $$____            \$$$$$  ______   \$$ _______  
+*| $$__/ $$|      \ | $$ |      \  /       \| $$    \             | $$ |      \ |  \|       \ 
+*| $$    $$ \$$$$$$\| $$  \$$$$$$\|  $$$$$$$| $$$$$$$\       __   | $$  \$$$$$$\| $$| $$$$$$$\
+*| $$$$$$$ /      $$| $$ /      $$ \$$    \ | $$  | $$      |  \  | $$ /      $$| $$| $$  | $$
+*| $$     |  $$$$$$$| $$|  $$$$$$$ _\$$$$$$\| $$  | $$      | $$__| $$|  $$$$$$$| $$| $$  | $$
+*| $$      \$$    $$| $$ \$$    $$|       $$| $$  | $$       \$$    $$ \$$    $$| $$| $$  | $$
+* \$$       \$$$$$$$ \$$  \$$$$$$$ \$$$$$$$  \$$   \$$        \$$$$$$   \$$$$$$$ \$$ \$$   \$$
+* 
+* ITM-541-05
+* Date: 08/28/2023
+*
+* Assignment: Lab 3
+* 
+* Description: Tip Calculator 
+*
+***********************************************************************/ -->
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Include an external stylesheet named "style.css" for styling. -->
     <link rel="stylesheet" href="style.css">
-</head> 
+</head>
 <body>
     <div class="container">
+        <!-- Heading for the page. -->
         <h4>ITMD 541 - Lab 3 - Palash Jain</h4>
         <h1>Tip Calculator</h1>
+
+        <!-- Form for the tip calculator. -->
         <form id="tipCalculatorForm">
+            <!-- Input field for the bill total. -->
             <div class="input-group">
                 <label for="billTotal">Bill Total:</label>
                 <input type="text" id="billTotal" placeholder="Enter Bill Total" required>
             </div>
+
+            <!-- Input field for displaying the tip percentage (disabled). -->
             <div class="input-group">
                 <label for="tipPercentage">Tip Percentage:</label>
                 <input type="text" id="tipPercentage" disabled>
             </div>
+
+            <!-- Input field and range slider for selecting the tip percentage. -->
             <div class="input-group">
                 <label for="tipSlider">Tip (0-100%):</label>
                 <input type="range" id="tipSlider" min="0" max="100">
             </div>
+
+            <!-- Input field for displaying the tip amount (disabled). -->
             <div class="input-group">
                 <label for="tipAmount">Tip Amount:</label>
                 <input type="text" id="tipAmount" disabled>
             </div>
+
+            <!-- Input field for displaying the total bill with tip (disabled). -->
             <div class="input-group">
                 <label for="totalBill">Total Bill with Tip:</label>
                 <input type="text" id="totalBill" disabled>
             </div>
+
+            <!-- Radio buttons to choose whether to split the bill. -->
             <div class="input-group">
                 <p>Do you want to split the bill?</p>
             </div>
             <div>
                 <input type="radio" name="ok" value="YES" id="y" onclick="openBox('y')">
                 <label for="y">YES</label>
-                <input type="radio" name ="ok" value="NO" id="n" onclick="openBox('n')">
+                <input type="radio" name="ok" value="NO" id="n" onclick="openBox('n')">
                 <label for="n">NO</label>
             </div>
-            <div class="input-group" id ="splitB">
-                <label  for="split">Number of People:</label>
+
+            <!-- Input field for entering the number of people to split the bill. -->
+            <div class="input-group" id="splitB">
+                <label for="split">Number of People:</label>
                 <input type="number" id="split" min="1" value="1">
             </div>
+
+            <!-- Input field for displaying the amount per person (disabled). -->
             <div class="input-group">
                 <label for="amountPerPerson">Amount per Person:</label>
                 <input type="text" id="amountPerPerson" disabled>
-            </div>  
+            </div>
+
+            <!-- Button to reset the form. -->
             <div class="input-group">
                 <button id="resetButton" type="button">New Customer</button>
             </div>
         </form>
+
+        <!-- Display error messages if any. -->
         <p class="error-message" id="error-message"></p>
+
+        <!-- Include an external JavaScript file named "script.js" for interactivity. -->
         <script src="script.js"></script>
     </div>
 </body>

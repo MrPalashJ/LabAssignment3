@@ -1,9 +1,31 @@
+<!-- /**********************************************************************
+* _______            __                      __                 _____            __           
+*|       \          |  \                    |  \               |     \          |  \          
+*| $$$$$$$\ ______  | $$  ______    _______ | $$____            \$$$$$  ______   \$$ _______  
+*| $$__/ $$|      \ | $$ |      \  /       \| $$    \             | $$ |      \ |  \|       \ 
+*| $$    $$ \$$$$$$\| $$  \$$$$$$\|  $$$$$$$| $$$$$$$\       __   | $$  \$$$$$$\| $$| $$$$$$$\
+*| $$$$$$$ /      $$| $$ /      $$ \$$    \ | $$  | $$      |  \  | $$ /      $$| $$| $$  | $$
+*| $$     |  $$$$$$$| $$|  $$$$$$$ _\$$$$$$\| $$  | $$      | $$__| $$|  $$$$$$$| $$| $$  | $$
+*| $$      \$$    $$| $$ \$$    $$|       $$| $$  | $$       \$$    $$ \$$    $$| $$| $$  | $$
+* \$$       \$$$$$$$ \$$  \$$$$$$$ \$$$$$$$  \$$   \$$        \$$$$$$   \$$$$$$$ \$$ \$$   \$$
+* 
+* ITM-541-05
+* Date: 08/28/2023
+*
+* Assignment: Lab 3
+* 
+* Description: Tip Calculator 
+*
+***********************************************************************/ -->
+/* Global styles for the entire page */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #a5e0d9;
 }
-.container{
+
+/* Styles for the main content container */
+.container {
     background-color: rgb(248, 250, 106);
     align-content: center;
     border: 1px solid #ccc;
@@ -12,22 +34,27 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading style */
 h1 {
     color: #333;
 }
 
+/* Styles for input groups (margins) */
 .input-group {
     margin: 20px;
 }
 
-input[type="text"], input[type="range"] {
+/* Styles for text and range input fields */
+input[type="text"],
+input[type="range"] {
     width: 100%;
     padding: 5px;
     border: 1px solid #333;
     border-radius: 5px;
 }
 
-#resetButton{
+/* Style for the reset button */
+#resetButton {
     background-color: rgb(0, 255, 213);
     border: none;
     border-radius: 3px;
@@ -39,49 +66,52 @@ input[type="text"], input[type="range"] {
     font-size: 16px;
 }
 
+/* Error message style */
 .error-message {
     color: rgb(255, 0, 0);
 }
-/* For phones */
+
+/* Media query for phones */
 @media (max-width: 500px) {
-    .a {
+    .container {
         width: 90%; /* Adjust the width as needed */
         margin: 5% auto;
     }
 }
 
-/* For tablets */
+/* Media query for tablets */
 @media (min-width: 501px) and (max-width: 800px) {
-    .container{
+    .container {
         width: 70%; /* Adjust the width as needed */
         margin: 5% auto;
     }
 }
 
-/* For mid size laptops */
+/* Media query for mid-size laptops */
 @media (min-width: 801px) and (max-width: 1200px) {
-    .container{
+    .container {
         width: 60%; /* Adjust the width as needed */
         margin: 5% auto;
     }
 }
 
-/* For laptops */
+/* Media query for laptops */
 @media (min-width: 1201px) and (max-width: 1600px) {
-    .container{
+    .container {
         width: 50%; /* Adjust the width as needed */
         margin: 5% auto;
     }
 }
 
-/* For desktop */
+/* Media query for desktops */
 @media (min-width: 1601px) {
-    .container{
+    .container {
         width: 40%; /* Adjust the width as needed */
         margin: 5% auto;
     }
 }
-#splitB{
-    display: none;
 
+/* Style for the element with ID "splitB" (initially hidden) */
+#splitB {
+    display: none;
 }
